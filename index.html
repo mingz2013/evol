@@ -18,7 +18,12 @@
 <script>
     // start of submission //
     with (m = Math) C = cos, S = sin, P = pow, R = random;
-    c.width = c.height = f = 500;
+    c.width = 700;
+    c.height = 700;
+    c.width = document.body.clientWidth;
+    c.height = document.body.clientHeight;
+    f = 500;
+
     h = -250;
     function p(a, b, c) {
         if (c > 60) return [S(a * 7) * (13 + 5 / (.2 + P(b * 4, 4))) - S(b) * 50, b * f + 50, 625 + C(a * 7) * (13 + 5 / (.2 + P(b * 4, 4))) + b * 400, a * 1 - b / 2, a];
